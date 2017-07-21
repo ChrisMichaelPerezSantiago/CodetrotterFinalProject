@@ -12,6 +12,14 @@
  > c. Video player.
  > 
  > d. Search for a series in specific.
+ 
+ ### Technologies to be used:
+
+ * [electron](https://electron.atom.io/)
+ * [node](https://nodejs.org/es/)
+ * [express](http://expressjs.com/es/)
+ * [webpack](https://webpack.js.org/)
+ 
 
 **Author**
 -----------------
