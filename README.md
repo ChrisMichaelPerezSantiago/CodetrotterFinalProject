@@ -1,5 +1,7 @@
 # Codetrotter Final Project
 
+# Creating A Crunchyroll API From Scratch
+
  * Desktop App using electron
  * Main idea: Video Content
  * Important points:
