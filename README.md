@@ -1,6 +1,6 @@
 # (Codetrotter Final Project) Crunchyroll API
 
-## Creating A Crunchyroll API From Scratch
+## Creating A Crunchyroll API From Scratch  :+1:
 
  * Desktop App using electron
  * Main idea: Video Content
