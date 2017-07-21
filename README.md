@@ -1,4 +1,4 @@
-# Codetrotter Final Project
+# (Codetrotter Final Project) Crunchyroll API
 
 ## Creating A Crunchyroll API From Scratch
 
