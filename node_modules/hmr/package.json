@@ -1,0 +1,23 @@
+{
+  "name": "hmr",
+  "version": "0.1.0",
+  "description": "hmr",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf dist",
+    "build": "tsc || true",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdi2290/hmr.git"
+  },
+  "author": "PatrickJS <github@gdi2290.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gdi2290/hmr/issues"
+  },
+  "homepage": "https://github.com/gdi2290/hmr#readme"
+}
