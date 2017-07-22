@@ -1,22 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route , Link} from 'react-router-dom';
+import {BrowserRouter, Route , Link , Switch} from 'react-router-dom';
+
+
+
+// pages
 import Home from './pages/home';
 import Other from './pages/other';
 
 // render on page
 ReactDOM.render(
   <BrowserRouter>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/other">Other</Link></li>
-      </ul>
+    <div className="container is-fluid">
 
-      <hr/>
-
-      <Route exact path="/" component={Home}/>
-      <Route path="/other" component={Other}/>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/other" component={Other}/>
+        <Route component={Home}/>
+      </Switch>
     </div>
   </BrowserRouter>,
   document.getElementById('app')

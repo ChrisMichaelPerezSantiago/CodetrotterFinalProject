@@ -1,1 +1,1 @@
-exports.crunchyroll = require('./crunchyroll');
+export {crunchyroll} from './crunchyroll';
