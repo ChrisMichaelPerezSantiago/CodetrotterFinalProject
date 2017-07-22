@@ -16,8 +16,7 @@ export const Crunchyroll = {
 
     // create cheerio cursor
     const $ = cheerio.load(data);
-    const series = $('li.group-item')
-      .map((index, el) =>  {
+    const series = $('li.group-item').map((index, el) =>  {
         // title and url
         const element = $(el);
         const a = $('a' , element);
@@ -29,8 +28,8 @@ export const Crunchyroll = {
         const image = img.attr('src');
 
         // amount of videos and serie data
-        const data = $('.series-data' , element);
-        const counter = parseInt(data.text().trim().replace('Videos' , '').trim() , 10);
+        const data = $('.series-data',element);
+        const counter = parseInt(data.text().trim().replace('Videos','').trim() , 10);
 
         // return series data
         return{
