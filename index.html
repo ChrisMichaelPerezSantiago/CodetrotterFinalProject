@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>App</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
 
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
-
-</head>
-
-<body>
+    <link rel="stylesheet" href="node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="node_modules/libjass/libjass.css">
+    <link rel="stylesheet" href="node_modules/videojs-ass/src/videojs.ass.css">
+  </head>
+  <body>
     <div id="app"></div>
-</body>
+  </body>
 
-<script src="/dist/app.min.js"></script>
-
+  <script src="node_modules/video.js/dist/video.min.js"></script>
+  <script src="node_modules/libjass/libjass.min.js"></script>
+  <script src="node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js"></script>
+  <script src="node_modules/videojs-ass/src/videojs.ass.js"></script>
+  <script>
+    require('babel-register');
+    require('./src/index.js');
+  </script>
 </html>

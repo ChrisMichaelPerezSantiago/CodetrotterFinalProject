@@ -3,13 +3,8 @@ const url = require('url');
 const path = require('path');
 const electron = require('electron');
 
-
-//my packages
-const startServer = require('./serve');
-
 // Module to control application life.
 const app = electron.app;
-
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
@@ -17,10 +12,9 @@ const BrowserWindow = electron.BrowserWindow;
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
-function createWindow() {
-  // Start webpack server
-  startServer();
 
+
+function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800,
@@ -28,11 +22,17 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL('http://localhost:3000/index.html');
-
+  mainWindow.loadURL(
+    url.format({
+      pathname: path.join(__dirname, 'index.html'),
+      protocol: 'file:',
+      slashes: true,
+    })
+  );
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
