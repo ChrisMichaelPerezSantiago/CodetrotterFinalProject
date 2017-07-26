@@ -4,22 +4,17 @@
 
  * Desktop App using electron
  * Main idea: Video Content
- * Important points:
- > a. Catalog of each series.
- > 
- > b. Episode list of each series.
- > 
- > c. Video player.
- > 
- > d. Search for a series in specific.
+
  
  ### Technologies to be used:
 
  * [electron](https://electron.atom.io/)
  * [node](https://nodejs.org/es/)
  * [express](http://expressjs.com/es/)
- * [webpack](https://webpack.js.org/)
- 
+ * [videojs](http://videojs.com/)
+ * [bulma](http://bulma.io/)
+ * [pouchdb](https://pouchdb.com/)
+ * [yarn](https://yarnpkg.com/en/)
 
 **Author**
 -----------------
