@@ -7,7 +7,7 @@ export default () => (
   <nav className="nav">
     <div className="nav-left nav-menu">
       <div className="nav-item">
-        <Link to="/" className="button">
+        <Link to="/" className="button is-primary">
           <span className="icon">
             <i className="fa fa-list" />
           </span>
@@ -15,7 +15,7 @@ export default () => (
         </Link>
       </div>
       <div className="nav-item">
-        <Link to="/my" className="button">
+        <Link to="/my" className="button is-primary">
           <span className="icon">
             <i className="fa fa-star" />
           </span>
@@ -25,7 +25,7 @@ export default () => (
     </div>
     <div className="nav-right nav-menu">
       <div className="nav-item">
-        <Link to="/settings" className="button">
+        <Link to="/settings" className="button is-info">
           <span className="icon">
             <i className="fa fa-cog" />
           </span>
@@ -34,4 +34,5 @@ export default () => (
       </div>
     </div>
   </nav>
+
 );

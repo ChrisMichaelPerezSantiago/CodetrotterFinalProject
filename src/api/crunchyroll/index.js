@@ -347,7 +347,7 @@ class Crunchyroll {
       <div className="card">
         <header className="card-header">
           <p className="card-header-title">
-            Crunchyroll
+            Access To My Crunchyroll Account
           </p>
         </header>
         <div className="card-content">

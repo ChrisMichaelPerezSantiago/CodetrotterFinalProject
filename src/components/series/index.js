@@ -13,17 +13,19 @@ export default withRouter(({series, history}) => {
       state: series,
     };
 
-    const doc = await db.current.get('series');
-    const update = {
-      _id: 'series',
-      data: series,
-    };
-    if (doc) {
-      update._rev = doc._rev;
-    }
-    await db.current.put(update);
+    try{
+      const doc = await db.current.get('series');
+      const update = {
+        _id: 'series',
+        data: series,
+      };
 
-    history.push(location);
+      if (doc) {update._rev = doc._rev;}
+      await db.current.put(update);
+
+    }catch(e){
+      history.push(location);
+    }
   };
 
   return (
@@ -39,7 +41,7 @@ export default withRouter(({series, history}) => {
             <div className="media">
               <div className="media-content">
                 <p className="title is-4">{series.title}</p>
-                <p className="subtitle is-6">Videos count: {series.count}</p>
+                <p className="subtitle is-6">Episodes: {series.count}</p>
               </div>
             </div>
           </div>
