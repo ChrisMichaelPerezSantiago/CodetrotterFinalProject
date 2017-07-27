@@ -206,7 +206,7 @@ class Crunchyroll {
     const playlist = M3U.parse(streamFileData);
 
     // get subtitles
-    const englishSubs = subtitlesInfo.map(s => s.$).filter(s => s.title.includes('English')).pop();
+    const englishSubs = subtitlesInfo.map(s => s.$).filter(s => s.title.includes('Español')).pop();
     const subData = await request(englishSubs.link);
     const subsObj = await parseXml(subData);
     const subsId = parseInt(subsObj.subtitle.$.id, 10);

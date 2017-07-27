@@ -50,7 +50,8 @@ export default class Series extends React.Component {
 
     if (episode && file) {
       body = (
-        <video id="video" className="video-js" controls autoPlay preload="auto">
+        //<video id="video" className="video-js" controls autoPlay preload="auto">
+        <video id="video" className="video-js" controls play preload="auto">
           <source src={file.url} type={file.type} />
         </video>
       );

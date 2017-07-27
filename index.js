@@ -16,8 +16,8 @@ let mainWindow;
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1100,
+    height: 800,
   });
 
   // and load the index.html of the app.
@@ -28,6 +28,9 @@ function createWindow() {
       slashes: true,
     })
   );
+
+  // set resizable to false
+  mainWindow.setResizable(false);
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
