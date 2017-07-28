@@ -67,7 +67,7 @@ export default class Series extends React.Component {
         <nav className="nav">
           <div className="nav-left nav-menu">
             <div className="nav-item">
-              <Link to="/" className=" button">
+              <Link to="/" className=" button is-primary">
                 <span className="icon">
                   <i className="fa fa-arrow-left" />
                 </span>

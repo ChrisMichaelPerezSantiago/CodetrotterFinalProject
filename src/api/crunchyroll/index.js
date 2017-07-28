@@ -344,15 +344,13 @@ class Crunchyroll {
     const loggedIn = this.authCookies !== null;
 
     return (
-      <div className="card">
+      <div className="card" id="card-setting">
         <header className="card-header">
           <p className="card-header-title">
             Access To My Crunchyroll Account
           </p>
         </header>
-        <div className="card-content">
-          Crunchyroll settings card.
-        </div>
+
         <footer className="card-footer">
           {loggedIn
             ? <a className="card-footer-item" href="#crlogout" onClick={() => this.logout()}>

@@ -1,0 +1,39 @@
+.card{
+  background: rgba(0, 171, 255, 0.20);
+  border-color: rgb(255, 3, 48);
+}
+
+.card{
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.card:hover{
+  top: -15px;
+}
+
+#card-setting{
+  background-color: white;
+}
+
+.box{
+  margin: auto;
+  margin-top: 20px;
+}
+
+.navbar{
+  margin-bottom: 20px;
+}
+
+.box{
+  border-color: rgba(0, 171, 255, 0.20);
+}
+
+
+/**
+ * VIDEO JS STYLE
+ **/
+.video-js{
+  margin: auto;
+}
