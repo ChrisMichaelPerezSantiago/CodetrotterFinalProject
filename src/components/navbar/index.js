@@ -111,7 +111,7 @@ export default () => (
 
      <div className="navbar-end">
         <div className="nav-item">
-          <Link to="/settings" className="button is-info">
+          <Link to="/settings" className="button is-primary">
             <span className="icon">
               <i className="fa fa-cog" />
             </span>

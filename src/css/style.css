@@ -1,3 +1,18 @@
+
+#video-chapter-description{
+  background: white;
+}
+
+#video-footer{
+  margin: auto;
+  margin-top: 20px;
+}
+
+#columns-series{
+  margin: auto;
+  margin-top: 20px;
+}
+
 .card{
   background: rgba(0, 171, 255, 0.20);
   border-color: rgb(255, 3, 48);
@@ -20,6 +35,13 @@
 .box{
   margin: auto;
   margin-top: 20px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.box:hover{
+  top: -15px;
 }
 
 .navbar{
