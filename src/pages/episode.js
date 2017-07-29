@@ -70,27 +70,7 @@ export default class Series extends React.Component {
     let info = (
               <div className="box">
         <article className="media">
-          <div className="media-left">
-            <figure className="image is-256x256">
 
-            <img src={this.state.episode.image} alt={this.state.episode.title} />
-
-            </figure>
-          </div>
-          <div className="media-content">
-            <div className="content">
-              <p>
-                <strong>{this.state.episode.title}</strong> <small></small>
-                <br/>
-                {this.state.episode.description}
-              </p>
-            </div>
-            <nav className="level is-mobile">
-              <div className="level-left">
-
-              </div>
-            </nav>
-          </div>
           {body}
         </article>
         </div>
@@ -112,6 +92,46 @@ export default class Series extends React.Component {
         </nav>
 
         {info}
+
+
+              <div className="card" id="video-chapter-description">
+        <div className="card-content">
+          <div className="media">
+            <div className="media-left">
+              <figure className="image is-256x256">
+                <img src={this.state.episode.image} alt={this.state.episode.title} />
+              </figure>
+            </div>
+            <div className="media-content">
+              <p className="title is-4"><strong>{this.state.episode.title}</strong></p>
+              <p className="subtitle is-6">Sponsored by crunchyroll</p>
+            </div>
+          </div>
+
+          <div className="content">
+              {this.state.episode.description}
+            <br/>
+            <small><a>@crunchyroll</a> <a>#anime</a> <a>#tv serie</a></small>
+          </div>
+        </div>
+      </div>
+
+
+      <footer className="footer" id="video-footer">
+        <div className="container">
+          <div className="content has-text-centered">
+            <p>
+              <strong>Japanistic Anime</strong> by <a>Chris M. Perez</a>. The source code is licensed
+                <a> MIT.</a>
+            </p>
+          <p>
+            <a className="icon">
+              <i className="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
 
       </div>

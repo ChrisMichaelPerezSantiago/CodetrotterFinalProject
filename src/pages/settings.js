@@ -41,6 +41,23 @@ export default class Settings extends React.Component {
             {Crunchyroll.drawSettings()}
           </div>
         </div>
+
+        <footer className="footer">
+          <div className="container">
+            <div className="content has-text-centered">
+              <p>
+                <strong>Japanistic Anime</strong> by <a>Chris M. Perez</a>. The source code is licensed
+                  <a> MIT.</a>
+              </p>
+            <p>
+              <a className="icon">
+                <i className="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+
       </div>
     );
   }

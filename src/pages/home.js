@@ -53,6 +53,22 @@ export default class Home extends React.Component {
             {chunk.map(s => <Series key={s._id} series={s} />)}
           </div>
         ))}
+
+        <footer className="footer">
+          <div className="container">
+            <div className="content has-text-centered">
+              <p>
+                <strong>Japanistic Anime</strong> by <a>Chris M. Perez</a>. The source code is licensed
+                  <a> MIT.</a>
+              </p>
+            <p>
+              <a className="icon">
+                <i className="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
       </div>
     );
   }

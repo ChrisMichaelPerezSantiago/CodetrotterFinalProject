@@ -78,11 +78,29 @@ export default class Series extends React.Component {
         </nav>
 
         {_.chunk(episodes, 4).map((chunk, i) => (
-          <div key={`chunk_${i}`} className="columns">
+          <div key={`chunk_${i}`} className="columns" id="columns-series">
             {chunk.map(ep => <Episode key={ep._id} episode={ep} />)}
           </div>
         ))}
+
+        <footer className="footer">
+          <div className="container">
+            <div className="content has-text-centered">
+              <p>
+                <strong>Japanistic Anime</strong> by <a>Chris M. Perez</a>. The source code is licensed
+                  <a> MIT.</a>
+              </p>
+            <p>
+              <a className="icon">
+                <i className="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+
       </div>
+
     );
   }
 }
