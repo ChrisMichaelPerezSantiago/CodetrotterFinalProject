@@ -78,17 +78,91 @@ export default class Series extends React.Component {
 
     return (
       <div>
-        <nav className="nav">
-          <div className="nav-left nav-menu">
-            <div className="nav-item">
-              <a href="#back" className="button is-primary" onClick={() => history.goBack()}>
-                <span className="icon">
-                  <i className="fa fa-arrow-left" />
-                </span>
-                <span>Back</span>
-              </a>
+
+        <nav className="navbar">
+          <div className="navbar-brand">
+            <a className="navbar-item">
+              <img src="http://bulma.io/images/bulma-logo.png"  width="112" height="28"/>
+            </a>
+          </div>
+
+
+        <nav className="navbar">
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">
+              Anime
+            </a>
+
+            <div className="navbar-dropdown">
+
+            <Link to="/" className="navbar-item">
+                <div className="level is-mobile">
+                  <div className="level-left">
+                    <div className="level-item">
+                      <p>
+                        <strong>All Series</strong>
+                        <br/>
+                        <small>Catalog of all series available</small>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="level-right">
+                    <div className="level-item">
+                      <span className="icon has-text-info">
+                        <i className="fa fa-film"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+
+
+              <Link to="/my" className="navbar-item">
+               <div className="level is-mobile">
+                 <div className="level-left">
+                   <div className="level-item">
+                     <p>
+                       <strong>My Series</strong>
+                       <br/>
+                       <small>My favorite series</small>
+                     </p>
+                   </div>
+                 </div>
+                 <div className="level-right">
+                   <div className="level-item">
+                     <span className="icon has-text-info">
+                       <i className="fa fa-star"></i>
+                     </span>
+                   </div>
+                 </div>
+               </div>
+             </Link>
             </div>
           </div>
+         </nav>
+
+
+
+        <div className="nav-left nav-menu">
+         </div>
+
+         <div className="nav-item">
+         </div>
+
+
+
+         <div className="navbar-end">
+            <div className="nav-item">
+              <a  href="#back" className=" button is-primary" onClick={() => history.goBack()}>
+                <span className="icon">
+                 <i className="fa fa-arrow-left" />
+                </span>
+                <span>Back</span>
+             </a>
+            </div>
+          </div>
+
         </nav>
 
         {info}
@@ -104,7 +178,12 @@ export default class Series extends React.Component {
             </div>
             <div className="media-content">
               <p className="title is-4"><strong>{this.state.episode.title}</strong></p>
-              <p className="subtitle is-6">Sponsored by crunchyroll</p>
+              <p className="subtitle is-6">
+               <span className="icon has-text-info">
+              <i className="fa fa-check" aria-hidden="true"></i>
+              </span>
+              Sponsored by crunchyroll
+              </p>
             </div>
           </div>
 
