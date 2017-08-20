@@ -30,7 +30,9 @@
     "cheerio": "^1.0.0-rc.2",
     "font-awesome": "^4.7.0",
     "hls.js": "^0.7.11",
+    "imdb-api": "^3.1.1",
     "lodash": "^4.17.4",
+    "malapi": "0.0.3",
     "playlist-parser": "^0.0.12",
     "pouchdb-browser": "^6.1.2",
     "react": "^15.4.2",
@@ -42,6 +44,8 @@
     "video.js": "^5.19.2",
     "videojs-ass": "^0.6.3",
     "videojs-contrib-hls": "^5.8.2",
+    "videojs-download-button": "git+https://github.com/neuron-digital/videojs-download-button.git",
+    "videojs-resolution-switcher": "^0.4.2",
     "xml2js": "^0.4.17",
     "zlib": "^1.0.5"
   }

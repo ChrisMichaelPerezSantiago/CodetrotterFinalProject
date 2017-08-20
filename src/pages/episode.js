@@ -2,7 +2,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-// our packages
+// my packages
 import {Crunchyroll} from '../api';
 
 
@@ -42,6 +42,10 @@ export default class Series extends React.Component {
     });
   }
 
+  componentWillUnmount() {
+    videojs('video').dispose();
+  }
+
   async init(props) {
     const {location} = props;
     const file = await Crunchyroll.getEpisode(location.state);
@@ -60,21 +64,27 @@ export default class Series extends React.Component {
 
     if (episode && file) {
       body = (
-        //<video id="video" className="video-js" controls autoPlay preload="auto">
-        <video id="video" className="video-js" controls  preload="auto">
-          <source src={file.url} type={file.type} />
-        </video>
+        <video
+          id="video"
+          className="video-js vjs-default-skin vjs-big-play-centered vjs-fluid"
+          controls
+          autoPlay
+          preload="auto"
+          download="auto"
+        >
+        <source src={file.url} type={file.type} />
+      </video>
       );
     }
 
     let info = (
-              <div className="box">
+      <div className="box">
         <article className="media">
-
           {body}
         </article>
-        </div>
+      </div>
     )
+
 
     return (
       <div>
@@ -138,6 +148,15 @@ export default class Series extends React.Component {
                  </div>
                </div>
              </Link>
+
+             <hr className="navbar-divider"/>
+                <div className="navbar-item">
+                   <p className="is-size-6-desktop">
+                    <strong className="has-text-info">version 1.0.0</strong>
+                  </p>
+                </div>
+
+
             </div>
           </div>
          </nav>
@@ -182,7 +201,19 @@ export default class Series extends React.Component {
                <span className="icon has-text-info">
               <i className="fa fa-check" aria-hidden="true"></i>
               </span>
-              Sponsored by crunchyroll
+                Sponsored by crunchyroll
+              <div>
+              <span className="icon has-text-info">
+              <i className="fa fa-check" aria-hidden="true"></i>
+              </span>
+               HD Video
+             </div>
+             <div>
+             <span className="icon has-text-info">
+             <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>
+             </span>
+              And the best is that it's free
+            </div>
               </p>
             </div>
           </div>

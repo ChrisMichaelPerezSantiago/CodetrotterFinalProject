@@ -36,6 +36,8 @@ export default () => (
   //  </div>
   //</nav>
 
+
+
   <nav className="navbar">
     <div className="navbar-brand">
       <a className="navbar-item">
@@ -95,7 +97,14 @@ export default () => (
              </div>
            </div>
          </Link>
-        </div>
+
+         <hr className="navbar-divider"/>
+            <div className="navbar-item">
+               <p className="is-size-6-desktop">
+                <strong className="has-text-info">version 1.0.0</strong>
+              </p>
+            </div>
+           </div>
       </div>
      </nav>
 

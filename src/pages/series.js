@@ -3,10 +3,10 @@ import _ from 'lodash';
 import React from 'react';
 import {Observable} from 'rxjs';
 import {Link} from 'react-router-dom';
-// our packages
+// my packages
 import db from '../db';
 import {Crunchyroll} from '../api';
-// our components
+// my components
 import Episode from '../components/episode';
 
 export default class Series extends React.Component {
@@ -124,6 +124,14 @@ export default class Series extends React.Component {
                  </div>
                </div>
              </Link>
+
+             <hr className="navbar-divider"/>
+                <div className="navbar-item">
+                   <p className="is-size-6-desktop">
+                    <strong className="has-text-info">version 1.0.0</strong>
+                  </p>
+                </div>
+
             </div>
           </div>
          </nav>

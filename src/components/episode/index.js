@@ -13,6 +13,7 @@ export default withRouter(({episode, history}) => {
     history.push(location);
   };
 
+
   return (
     <div className="column">
       <div className="card" onClick={openEpisodePage}>
@@ -24,7 +25,7 @@ export default withRouter(({episode, history}) => {
         <div className="card-content">
           <div className="media">
             <div className="media-content">
-              <p className="title is-4">{episode.title}</p>
+              <p className="title is-4"><strong>{episode.title}</strong></p>
               <p className="subtitle is-6">{episode.description}</p>
             </div>
           </div>

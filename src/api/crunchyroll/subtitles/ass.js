@@ -1,7 +1,7 @@
 /**
  * Code adapted from https://github.com/Deathspike/crunchyroll.js under MIT
  */
-// our packages
+// my packages
 import parseXml from '../parseXml';
 
 /**

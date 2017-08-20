@@ -2,7 +2,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-// our packages
+// my packages
 import {Crunchyroll} from '../api';
 
 export default class Settings extends React.Component {
@@ -83,6 +83,14 @@ export default class Settings extends React.Component {
                    </div>
                  </div>
                </Link>
+
+               <hr className="navbar-divider"/>
+                  <div className="navbar-item">
+                     <p className="is-size-6-desktop">
+                      <strong className="has-text-info">version 1.0.0</strong>
+                    </p>
+                  </div>
+
               </div>
             </div>
            </nav>

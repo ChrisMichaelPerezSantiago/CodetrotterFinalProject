@@ -28,6 +28,7 @@ export default withRouter(({series, history}) => {
     }
   };
 
+
   return (
     <div className="tile is-parent is-3">
       <div className="tile is-child">
@@ -40,8 +41,8 @@ export default withRouter(({series, history}) => {
           <div className="card-content">
             <div className="media">
               <div className="media-content">
-                <p className="title is-4">{series.title}</p>
-                <p className="subtitle is-6">Episodes: {series.count}</p>
+                <p className="title is-4"><strong>{series.title}</strong></p>
+                <p className="subtitle is-6"><small>{series.count} Episodes </small></p>
               </div>
             </div>
           </div>

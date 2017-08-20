@@ -83,7 +83,7 @@ class Crunchyroll {
     this.authCookies = null;
   }
 
-  async getAllSeries(page = 0) {
+  async getAllSeries(page = 7) {
     await this.isInited;
 
     // load catalogue

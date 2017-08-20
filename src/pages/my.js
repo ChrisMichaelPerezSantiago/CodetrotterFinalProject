@@ -2,10 +2,12 @@
 import _ from 'lodash';
 import React from 'react';
 import {Observable} from 'rxjs';
-// our packages
+
+// my packages
 import db from '../db';
 import {Crunchyroll} from '../api';
-// our components
+
+// my components
 import Navbar from '../components/navbar';
 import Series from '../components/series';
 
